@@ -90,7 +90,7 @@ function gpr() {
 #
 # Homebrew
 #
-export HOMEBREW_GITHUB_API_TOKEN=8cfcf85ad22d360a207949f8f26978982ae6780a
+export HOMEBREW_GITHUB_API_TOKEN=7588538db7b94b070911812fdb7456f6d36cc14b
 
 #
 # nodenv
