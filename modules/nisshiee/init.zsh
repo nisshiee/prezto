@@ -1,4 +1,11 @@
 #
+# Secrets
+#
+if [ -r ~/.secrets ]; then
+  source ~/.secrets
+fi
+
+#
 # Prompt
 #
 PROMPT='${editor_info[keymap]} '
@@ -90,7 +97,11 @@ function gpr() {
 #
 # Homebrew
 #
-export HOMEBREW_GITHUB_API_TOKEN=1e5c5204057bde57108060148783c1b9d4e54454
+if [ -z "$HOMEBREW_GITHUB_API_TOKEN" ]; then
+  echo "Create a new personal access token:"
+  echo "-> https://github.com/settings/tokens/new?scopes=gist,public_repo&description=Homebrew"
+  echo "-> write export to ~/.secrets"
+fi
 
 #
 # nodenv
