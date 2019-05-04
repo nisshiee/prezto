@@ -107,3 +107,10 @@ fi
 # nodenv
 #
 eval "$(nodenv init -)"
+
+# Python
+#   - Python2.7はmacOS Syste
+#       - python get-pip.py --user でpipがインストールされている
+#   - Python3系はPython本家サイトからインストーラをダウンロードしてインストール
+PATH="/Users/nisshiee/Library/Python/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
