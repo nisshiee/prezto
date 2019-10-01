@@ -85,6 +85,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # golang
 #
 export GOPATH="$HOME"
+export GO111MODULE=on
+export GOENV_DISABLE_GOPATH=1
+eval "$(goenv init -)"
 
 #
 # Github
