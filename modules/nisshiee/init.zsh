@@ -117,3 +117,9 @@ eval "$(nodenv init -)"
 #   - Python3系はPython本家サイトからインストーラをダウンロードしてインストール
 PATH="/Users/nisshiee/Library/Python/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
+
+#
+# SDKMAN
+#
+export SDKMAN_DIR="/Users/nisshiee/.sdkman"
+[[ -s "/Users/nisshiee/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/nisshiee/.sdkman/bin/sdkman-init.sh"
